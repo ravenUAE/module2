@@ -1,0 +1,109 @@
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  margin-bottom: 15px;
+  text-align:center;
+}
+p {
+  border: 1px solid black;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 15px;
+  color: #0000EE;
+  background-color:#FFFF00;
+  padding-left:5%;
+  padding-right:5%;
+}
+ #sushi {
+	right:5%;
+	}
+.titlebox {
+  width: 150px;
+  height: 25px;
+  border: 1px solid black;
+  margin-bottom: 15px;
+  text-align:center;
+}
+.chickentitle {
+  background-color: #AAFFAA;
+  position: absolute;
+  top: 0%;
+  right: 5%;
+}
+.beeftitle {
+  background-color: #FFAAFF;
+  position: absolute;
+  top: 0%;
+  right: 5%;
+}
+.sushititle
+{
+background-color: #AAFFFF;
+  position: absolute;
+  top: 0%;
+  right: 5%;		
+}
+.text{
+	position:relative;
+	top:25px;
+	background-color:#FFFF00;
+}
+div#container {
+  position: relative;
+}
+#wide{
+	width:95%;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Desktop View **********/
+@media (min-width: 992px) {
+  .col-dv-4 {
+    float: left;
+  }
+  
+  .col-dv-4 {
+    width: 33.33%;
+  }
+ 
+}
+
+/********** Tablet View **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-tv-6, .col-tv-12 {
+    float: left;
+  }
+ 
+  .col-tv-6 {
+    width: 50%;
+  }
+ 
+  .col-tv-12 {
+    width: 100%;
+  }
+  #sushi {
+	width:95%;
+	}
+	.sushititle{
+	right: 2.5%;		
+	}
+}
+/********** Phone View **********/
+@media  (max-width: 767px) {
+   .col-pv-12 {
+    float: left;
+  }
+ 
+  .col-pv-12 {
+    width: 100%;
+  }
+}
